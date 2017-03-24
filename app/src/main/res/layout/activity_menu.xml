@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.pruebas.menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnPopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu popup" />
+
+        <Button
+            android:id="@+id/btnmf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Flotante" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navegacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        android:visibility="invisible"
+        app:menu="@menu/mis_menus" />
+
+</LinearLayout>
